@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 设置-高级-通知  -->
+<!-- Berry -->
+<!-- 14-4-17 -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    
+    <!-- 未读消息 -->
+    <PreferenceCategory
+        android:title="@string/pref_new_message_title"
+        >
+    
+        <!-- 深夜勿扰  -->
+   
+        <CheckBoxPreference
+            android:key="disable_fetch_at_night"
+            android:title="@string/pref_disable_notification_at_night_title"
+            android:summary="@string/pref_disable_notification_at_night_summary"
+            android:defaultValue="true"/>
+ 
+ 	
+        <!-- 推送间隔 -->
+     
+        <ListPreference
+            android:key="frequency"
+            android:title="@string/frequency"
+            android:dialogTitle="@string/frequency"
+            android:entries="@array/frequency"
+            android:entryValues="@array/frequency_value"
+            android:defaultValue="1"/>
+  
+   
+    </PreferenceCategory>
+    
+    <!-- 类型 -->
+    <PreferenceCategory
+        android:title="@string/pref_new_message_type_title"
+        >
+         <!-- 提及我的 -->
+        <CheckBoxPreference
+            android:key="mention_to_me"
+            android:title="@string/pref_mention_to_me_title"
+            android:defaultValue="true"/>
+        <!-- 评论我的 -->
+        <CheckBoxPreference
+            android:key="comment_to_me"
+            android:title="@string/pref_comment_to_me_title"
+            android:defaultValue="true"/>
+        <!-- 提及和评论我的 -->
+        <CheckBoxPreference
+            android:key="mention_comment_to_me"
+            android:title="@string/pref_mention_comment_to_me_title"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    
+    <!-- 提醒方式 -->
+    <PreferenceCategory
+        android:title="@string/pref_notification_feedback_title"
+        >
+        <!-- 震动 -->
+        <CheckBoxPreference
+            android:key="vibrate"
+            android:title="@string/pref_vibrate_title"
+            android:defaultValue="false"/>
+        
+        <!--  LED 呼吸灯 -->
+        <CheckBoxPreference
+            android:key="led"
+            android:title="@string/pref_led_title"
+            android:defaultValue="false"/>
+        
+        <!--  铃声 -->
+        <Preference
+            android:title="@string/pref_ringtone_title"
+            android:key="ringtone">
+
+        </Preference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

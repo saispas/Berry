@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 设置   -->
+<!-- Berry -->
+<!-- 14-4-17 -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory android:title="@string/pref_normal_title">
+
+        <!--  显示 选项 -->
+        <Preference android:title="@string/pref_appearance_title">
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.AppearanceActivity"/>
+        </Preference>
+        
+        <!--  阅读选项 -->
+        <Preference android:title="@string/pref_read_title">
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.ReadActivity"/>
+        </Preference>
+        
+        <!--  音效选项 -->
+        <CheckBoxPreference
+            android:key="sound"
+            android:title="@string/pref_sound_title"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <!-- 高级选项   -->
+    <PreferenceCategory android:title="@string/pref_advanced_title">
+        
+        <!-- 通知选项 -->
+        <Preference android:title="@string/notification">
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.NotificationActivity"/>
+        </Preference>
+        
+        <!-- 草稿箱 选项  -->
+        <Preference
+            android:title="@string/draft"
+            android:key="draft">
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.DraftActivity"/>
+        </Preference>
+        
+        <!-- 流量控制选项 -->
+        <Preference
+            android:title="@string/pref_data_control_title"
+            android:key="data_control">
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.ControlActivity"/>
+        </Preference>
+        
+        <!-- 首页过滤 选项 --> <!-- 太高级了，屏蔽掉 -->
+  <!-- 
+        <Preference
+            android:title="@string/filter"
+            android:key="filter">
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.FilterActivity"
+                />
+        </Preference>
+   -->
+   		<!-- 性能 选项 --> <!-- 屏蔽掉 -->
+<!-- 
+        <Preference
+            android:title="@string/pref_performance_title"
+            >
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.PerformanceActivity"
+                />
+        </Preference>
+   -->     
+        <!-- 其他选项 -->
+    
+        <Preference
+            android:title="@string/pref_other_title"
+            >
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.OtherActivity"
+                />
+        </Preference>
+  
+    </PreferenceCategory>
+    
+    <!-- 关于 -->
+    <PreferenceCategory
+        android:title="@string/pref_about_title">
+        <Preference android:title="@string/pref_about_title">
+            <intent
+                android:targetPackage="org.berry"
+                android:targetClass="org.berry.ui.preference.AboutActivity"/>
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

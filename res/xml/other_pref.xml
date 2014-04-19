@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置-高级-其他 选项 -->
+<!-- Berry -->
+<!-- 14-4-17 -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_web_browser_title">
+<!-- 浏览器 选项 -->
+
+<!-- 启用内置浏览器  选项 -->
+        <CheckBoxPreference
+                android:key="enable_internal_web_browser"
+                android:title="@string/pref_enable_internal_web_browser"
+                android:summary="@string/pref_web_browser_summary"
+                android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+  <!-- 图片选项 -->
+    <PreferenceCategory android:title="@string/pref_gallery_title">
+        
+	<!-- 启用点击关闭图片 选项 -->
+ 
+        <CheckBoxPreference
+                android:key="enable_click_to_close_gallery"
+                android:title="@string/pref_enable_click_to_close_gallery"
+                android:defaultValue="true"/>
+  </PreferenceCategory>
+    
+    <!-- 缓存 选项 -->
+    <PreferenceCategory android:title="@string/pref_cache_title">
+        
+        <!-- 点击清理缓存 选项 -->
+        <Preference
+                android:key="click_to_clean_cache"
+                android:summary="@string/getting_cache_size"
+                android:title="@string/pref_click_to_clean_cache"
+                />
+
+    </PreferenceCategory>
+</PreferenceScreen>

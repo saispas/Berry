@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 设置-高级-流量控制 设置 -->
+<!-- Berry -->
+<!-- 14-4-17 -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+     <!-- 图片 -->
+    <PreferenceCategory
+        android:title="@string/pref_pic_category_title"
+        >
+        
+		<!-- 关闭图片 -->
+        <CheckBoxPreference
+            android:key="disable_download"
+            android:title="@string/pref_disable_download_pic_title"
+            android:summary="@string/pref_disable_download_pic_summary"
+            android:defaultValue="false"/>
+
+		<!-- 评论/转发列表图片 -->
+
+        <ListPreference
+            android:key="comment_repost_list_avatar"
+            android:title="@string/pref_comment_repost_list_avatar_title"
+            android:dialogTitle="@string/pref_comment_repost_list_avatar_title"
+            android:entries="@array/comment_repost_list_avatar_mode"
+            android:entryValues="@array/comment_repost_list_avatar_value"
+            android:defaultValue="3"/>
+
+		
+		<!-- 上传图片质量 -->
+        <ListPreference
+            android:key="upload_pic_quality"
+            android:title="@string/pref_upload_pic_quality_title"
+            android:dialogTitle="@string/pref_upload_pic_quality_title"
+            android:entries="@array/upload_pic_quality"
+            android:entryValues="@array/upload_pic_quality_value"
+            android:defaultValue="4"/>
+        
+        <!-- wifi下预先载入图片 -->
+        <CheckBoxPreference
+            android:key="enable_wifi_auto_download_pic"
+            android:title="@string/pref_enable_wifi_auto_download_pic_title"
+            android:summary="@string/pref_enable_wifi_auto_download_pic_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    
+    <!-- 数据 -->
+    <PreferenceCategory
+        android:title="@string/pref_data_category_title"
+        >
+        
+        <!-- 每次获取数据条数 -->
+        <ListPreference
+            android:key="msg_count"
+            android:title="@string/pref_msg_count_title"
+            android:dialogTitle="@string/pref_msg_count_title"
+            android:entries="@array/msg_count_title"
+            android:entryValues="@array/msg_count_title_value"
+            android:defaultValue="2"/>
+        
+        <!-- wifi下尽可能获取数据 -->
+
+        <CheckBoxPreference
+            android:key="enable_wifi_unlimited_msg_count"
+            android:title="@string/pref_enable_wifi_unlimited_msg_count_title"
+            android:summary="@string/pref_enable_wifi_unlimited_msg_count_summary"
+            android:defaultValue="true"/>
+ 
+    </PreferenceCategory>
+
+</PreferenceScreen>

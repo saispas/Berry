@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release
+            version="Weibo_1.0.2_RC - 2014.4.18"
+            versioncode="1.1">
+        <change></change>
+        <change>修复打开程序闪退想象</change>
+        <change>修复部分选项闪退问题</change>
+        <change>修复其他问题</change>
+        <change>发送微博时添加图片，选择图库会引起闪退</change>
+        <change>部分机型可能会解析包错误导致不能安装</change>
+        <change></change>
+        
+        
+    </release>
+   
+</changelog>
